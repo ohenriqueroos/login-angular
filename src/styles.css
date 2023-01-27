@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #9803fc;
+    --secondary-color: #520088;
+    --text-color: #fff;
+    --background-color: #242424;
+    --card-background-color: #3b3b3b;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+/* Buttons */
+.btn-primary {
+    font-weight: 700;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    transition: all .2s linear;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    padding-inline: 1.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary {
+    font-weight: 500;
+    border: 1px solid var(--text-color);
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    transition: all .2s linear;
+}
+
+/* Checkbox */
+.form-check-input:checked {
+    background-color: var(--primary-color);
+}
+
+.card {
+    width: 35vw !important;
+    color: var(--text-color);
+    background-color: var(--card-background-color);
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.form-text {
+    color: var(--text-color);
+    opacity: 75%;
+}
